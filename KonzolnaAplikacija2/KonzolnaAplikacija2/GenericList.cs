@@ -25,7 +25,7 @@ namespace KonzolnaAplikacija2
         }
         public int Count => _cout;
 
-        int IGenericList<X>.Count => throw new NotImplementedException();
+        int IGenericList<X>.Count => _cout;
 
         public void Add(X item)
         {
