@@ -43,6 +43,7 @@ namespace GenericListLib
                     _copyOfInternalStorage[i] = _internalStorage[i];
                 }
                 _internalStorage = _copyOfInternalStorage;
+                _internalStorage[_cout] = item;
                 _cout++;
 
             }
@@ -56,9 +57,9 @@ namespace GenericListLib
 
         public bool Contains(X item)
         {
-            foreach (var value in _internalStorage)
+            for (int i = 0; i <= _cout; i++)
             {
-                if (value.Equals(item))
+                if (_internalStorage[i].Equals(item))
                 {
                     return true;
                 }

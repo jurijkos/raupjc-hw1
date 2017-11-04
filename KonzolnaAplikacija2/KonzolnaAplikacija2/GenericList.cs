@@ -43,6 +43,8 @@ namespace KonzolnaAplikacija2
                     _copyOfInternalStorage[i] = _internalStorage[i];
                 }
                 _internalStorage = _copyOfInternalStorage;
+                _internalStorage[_cout] = item;
+                _cout++;
 
             }
         }
@@ -55,9 +57,10 @@ namespace KonzolnaAplikacija2
 
         public bool Contains(X item)
         {
-            foreach (var value in _internalStorage)
+
+            for (int i = 0; i <= _cout; i++)
             {
-                if (value.Equals(item))
+                if (_internalStorage[i].Equals(item))
                 {
                     return true;
                 }
@@ -80,7 +83,7 @@ namespace KonzolnaAplikacija2
 
         public IEnumerator<X> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return new GenericListEnumerator<X>(this);
         }
 
         public int IndexOf(X item)

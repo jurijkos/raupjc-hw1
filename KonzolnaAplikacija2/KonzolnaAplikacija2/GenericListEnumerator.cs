@@ -20,7 +20,7 @@ namespace KonzolnaAplikacija2
 
         public void Dispose()
         {
-            throw new System.NotImplementedException();
+           
         }
 
         public bool MoveNext()
@@ -36,7 +36,7 @@ namespace KonzolnaAplikacija2
 
         public void Reset()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

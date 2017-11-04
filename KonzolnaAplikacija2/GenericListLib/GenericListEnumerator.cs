@@ -24,7 +24,7 @@ namespace GenericListLib
 
         public void Dispose()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public bool MoveNext()
@@ -40,7 +40,7 @@ namespace GenericListLib
 
         public void Reset()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
